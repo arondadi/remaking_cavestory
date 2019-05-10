@@ -74,4 +74,9 @@
       <Filter>content\sprites</Filter>
     </Image>
   </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitignore">
+      <Filter>Source Files\src</Filter>
+    </None>
+  </ItemGroup>
 </Project>

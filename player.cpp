@@ -45,7 +45,7 @@ void Player::stopMoving() {
 
 void Player::update(float elapsedTime) {
 	//Move by dx
-	//this->_x += this->_dx*elapsedTime;
+	this->_x += this->_dx*elapsedTime;
 
 	AnimatedSprite::update(elapsedTime);
 }

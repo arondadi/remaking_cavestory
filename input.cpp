@@ -1,11 +1,11 @@
-#include <input.h>
+#include "input.h"
 
 /* Input class
-Keeps track of keyboard state
-*/
+ * Keeps track of keyboard state
+ */
 
-//This function gets called at the beginning of each new frame
-//to reset the keys that are no longer relevant
+ //This function gets called at the beginning of each new frame
+ //to reset the keys that are no longer relevant
 void Input::beginNewFrame() {
 	this->_pressedKeys.clear();
 	this->_releasedKeys.clear();
@@ -33,6 +33,7 @@ bool Input::wasKeyReleased(SDL_Scancode key) {
 	return this->_releasedKeys[key];
 }
 
+//Check if a certain key is currently being held
 bool Input::isKeyHeld(SDL_Scancode key) {
 	return this->_heldKeys[key];
 }
