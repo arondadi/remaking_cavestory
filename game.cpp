@@ -31,6 +31,7 @@ void Game::gameLoop() {
 	SDL_Event event;
 
 	this->_player = Player(graphics, 100, 100);
+	this->_level = Level("map1", Vector2(100, 100), graphics);
 
 	// Used to limit fps 
 	int LAST_UPDATE_TIME = SDL_GetTicks();
@@ -81,6 +82,10 @@ void Game::gameLoop() {
 void Game::draw(Graphics &graphics) {
 	graphics.clear();
 
+	/*Draw level first*/
+	this->_level.draw(graphics);
+
+	/*Player is drawn on top of level*/
 	this->_player.draw(graphics);
 
 	graphics.flip();
@@ -88,4 +93,5 @@ void Game::draw(Graphics &graphics) {
 
 void Game::update(float elapsedTime) {
 	this->_player.update(elapsedTime);
+	this->_level.update(elapsedTime);
 } 

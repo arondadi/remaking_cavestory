@@ -22,6 +22,12 @@
     <Filter Include="content\sprites">
       <UniqueIdentifier>{a1751bec-1216-440e-a47c-1b957154bde9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="content\tilesets">
+      <UniqueIdentifier>{d46eb685-6748-4067-9cf1-50e9244f6871}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="content\maps">
+      <UniqueIdentifier>{9794e661-c018-4edd-9b7b-92c38d9691fe}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="graphics.cpp">
@@ -43,6 +49,15 @@
       <Filter>Source Files\src</Filter>
     </ClCompile>
     <ClCompile Include="player.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="level.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="tile.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxml2.cpp">
       <Filter>Source Files\src</Filter>
     </ClCompile>
   </ItemGroup>
@@ -68,15 +83,30 @@
     <ClInclude Include="player.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="level.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="content\sprites\MyChar.png">
       <Filter>content\sprites</Filter>
     </Image>
+    <Image Include="content\backgrounds\bkBlue.png">
+      <Filter>content\sprites</Filter>
+    </Image>
+    <Image Include="content\tilesets\PrtCave.png">
+      <Filter>content\tilesets</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore">
       <Filter>Source Files\src</Filter>
+    </None>
+    <None Include="content\maps\map1.tmx">
+      <Filter>content\maps</Filter>
     </None>
   </ItemGroup>
 </Project>

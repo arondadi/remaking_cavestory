@@ -127,9 +127,12 @@
     <ClCompile Include="game.cpp" />
     <ClCompile Include="graphics.cpp" />
     <ClCompile Include="input.cpp" />
+    <ClCompile Include="level.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="player.cpp" />
+    <ClCompile Include="tile.cpp" />
     <ClCompile Include="sprite.cpp" />
+    <ClCompile Include="tinyxml2.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="animatedsprite.h" />
@@ -137,14 +140,19 @@
     <ClInclude Include="global.h" />
     <ClInclude Include="graphics.h" />
     <ClInclude Include="input.h" />
+    <ClInclude Include="level.h" />
     <ClInclude Include="player.h" />
     <ClInclude Include="sprite.h" />
+    <ClInclude Include="tile.h" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="content\backgrounds\bkBlue.png" />
     <Image Include="content\sprites\MyChar.png" />
+    <Image Include="content\tilesets\PrtCave.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore" />
+    <None Include="content\maps\map1.tmx" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
