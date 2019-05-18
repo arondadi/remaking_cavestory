@@ -2,6 +2,7 @@
 #define GRAPHICS_H
 
 #include <SDL.h>
+#include <SDL_image.h>
 
 /*
 Graphics Class
